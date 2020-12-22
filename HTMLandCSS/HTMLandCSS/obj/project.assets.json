@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\HTMLandCSS\\HTMLandCSS\\HTMLandCSS.csproj",
+      "projectUniqueName": "E:\\SgUnited\\sgunitedhtmlcss\\HTMLandCSS\\HTMLandCSS\\HTMLandCSS.csproj",
       "projectName": "HTMLandCSS",
-      "projectPath": "C:\\Users\\Dell\\source\\repos\\HTMLandCSS\\HTMLandCSS\\HTMLandCSS.csproj",
+      "projectPath": "E:\\SgUnited\\sgunitedhtmlcss\\HTMLandCSS\\HTMLandCSS\\HTMLandCSS.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\source\\repos\\HTMLandCSS\\HTMLandCSS\\obj\\",
+      "outputPath": "E:\\SgUnited\\sgunitedhtmlcss\\HTMLandCSS\\HTMLandCSS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
