@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <form id="frmid1">
+        Name :- <input type="text" id="nameid1" value="Shiv" /><br />
+        amount :- <input type="text" id="amountid1" />
+    </form><br />
+    <form id="frmid2">
+        <label id="lbl2"> Name </label>:- <input type="text" id="nameid2" value="Shiv1" /><br />
+        amount :- <input type="text" id="amountid2" />
+    </form>
+    <input type="button" value="SimpleDom" onclick="SimpleDom()" /><br />
+    <input type="button" value="QueryDom" onclick="QueryDom()" />
+
+    <script>
+        function SimpleDom() {
+            alert(window.document.forms[0].elements["nameid1"].value);
+            alert(window.document.forms["frmid2"].elements[0].value);
+            alert(document.getElementById("nameid2").value);
+            //  window.document.forms[0].elements["nameid1"].value = "newShiv";
+        }
+        function QueryDom() {
+            var selected = document.querySelector("input[type=text]");
+            alert(selected.value); // single element
+            var selecteds = document.querySelectorAll("input[type=text]");
+            // for loop of javascript selected alert
+            for (var x = 0; x <= selecteds.length; x++) {
+                var temp = selecteds[x];
+                alert(temp.value);
+            }
+        }
+    </script>
+</body>
+</html>

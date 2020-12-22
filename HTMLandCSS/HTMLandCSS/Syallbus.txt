@@ -1,0 +1,18 @@
+﻿HTML -- SGML ==> XML , HTML
+Welformed , not wellformed.
+DOCTYPE
+HTML -- Head -- Body
+Title tage -- Content on title bar.
+B,U,IMG,H1,H2,H3,FONT,HREF , P
+Form , input type text , button
+CSS - Look and feel Selector{ fore-color:red }
+Inline , External
+Case sensitive , ;
+var x = 0 ; inferred -- variables
+Dynamic language
+Literal , Constructor way
+Button wrote click invoked Javascript function
+DOM - Document object
+Window - Document , Form , Element
+document.getElement..Id("123").value;
+IF , CASE , DO , WHILE

@@ -1,0 +1,9 @@
+﻿td, div, input[type="text"], input[type="radio"], input[type="password"], textarea {
+    background-color: lightblue;
+    color:yellow
+}
+
+#id1, #someform {
+    background-color: red;
+    align-content: center
+}
