@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<!--Some changes-->
+<body>
+    <input type="button" value="get data" onclick="SomeMethod()"/><br />
+    <script>
+        "use strict";
+          x = 100; // global
+        
+        function SomeMethod() {
+             var  x=50; // global
+            alert(x);
+            
+        }
+        SomeMethod();
+        alert(x);
+        
+    </script>
+</body>
+</html>

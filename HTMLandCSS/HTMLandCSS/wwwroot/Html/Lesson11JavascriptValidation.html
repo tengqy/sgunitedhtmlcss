@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<!--Some changes-->
+<body>
+
+    <form action="someserver" method="post" onsubmit="return CheckValidation();">
+        Name :-  <input type="text" id="nameId" placeholder="Enter some value" /><br />
+        Age :- <input type="number" id="ageId" /><br />
+        Email :- <input type="text" id="emailId"/><br />
+        Citizen number :- <input type="text" id="citiId" /><br />
+        <input type="submit" value="submit button" />
+        <input type="button" value="button button" onclick="CheckValidation()" />
+    </form>
+    <script>
+        function CheckCitizen(value,errormessage) {
+           
+            var citizenexpression = /^[A-Z]{1,1}[0-9]{4,4}$/;
+            
+            if (value.search(citizenexpression) == -1) {
+                alert(errormessage);
+                return false;
+            }
+            return true;
+        }
+        function CheckValidation() {
+            // get access to the textbox
+            var nameId = document.getElementById("nameId");
+            var ageId = document.getElementById("ageId");
+            var citiId = document.getElementById("citiId");
+
+            if (CheckCitizen(citiId.value,"Citizen ship not proper format") == false) {
+                return false;
+                // stops executions
+            }
+
+            
+            if (CheckRequired(nameId.value, "Name is required") == false) {
+                return false;
+                // stops executions
+            }
+
+            if (CheckRequired(ageId.value, "Age is required") == false) {
+                return false;
+            }
+            return true;// else true
+            // javascript to submit call
+        }
+
+        function CheckRequired(value, errormessage) {
+            if (value.length == 0) {
+                alert(errormessage);
+                return false;
+                // not executing anything after this
+            }
+            return true;
+        }
+
+    </script>
+</body>
+</html>
