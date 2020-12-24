@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<!--Some changes-->
+<body>
+    <input type="text" id="txtidname" />
+    <input type="button" value="Create Customer" onclick="CreateCustomer()" /><br />
+    <input type="button" value="Create Customer with Address" onclick="CreateCustomerWithAddress()" />
+
+    <script>
+        // Javascript is a dynamic prototypical language
+        // This automibile is based on some prototype
+        // Inheritance...Prototype
+        function Customer() {
+            this.name = "";
+            this.address = "";
+            this.Check = function () {
+                if (this.name.length == 0) {
+                    alert("Name is required");
+                    return true;
+                }
+            }
+
+        }
+        function CreateCustomer() {
+            // invocation
+            var cust = new Customer();
+            cust.name = document.getElementById("txtidname").value;
+            cust.address = "";
+            cust.Check();
+        }
+        function CreateCustomerWithAddress() {
+            // invocation
+            // attaching
+            // take customer , automatically the prototype
+            var custaddress = new Customer();
+           
+            custaddress.CheckAddress = function () {
+                if (this.address.length == 0) {
+                    alert("Address is required");
+                    return;
+                }
+            }
+            custaddress.Check();
+            custaddress.CheckAddress();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="button" value="Click" onclick="SomeCode()"/>
+    <input type="text" id="id12"/>
+    <script>
+        function SomeCode() {
+            
+            var worker = new Worker("worker.js");
+            worker.onmessage = function (event) {
+                document.getElementById("id12").value = event.data;
+            };
+        }
+    </script>
+</body>
+</html>

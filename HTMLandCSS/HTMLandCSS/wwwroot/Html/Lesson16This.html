@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<!--Some changes-->
+<body>
+    <script>
+         // window --> document --> forms -- elements
+        var x = 20;
+        function Test() {
+            this.y = 40; //window.y = 40 
+            // new -- differeny Y
+            alert("test");
+        }
+        // read about closure , IIFE
+        
+       // alert(window.x);
+        //alert(this.x);
+        // Statement 1 :-  every code what you write , every html elements
+        // it becomes automatically the past of the main window
+        //window.Test();
+        // Statement 2 :- This is That Window of the DOM
+       // this.Test();
+        // Statement 3:- When you set this , variables spill to the window
+        // global polluting...
+        Test();// this become that Window
+        // Statement 4 :- When you use new there are different instances of this.
+        var t1 = new Test(); 
+        
+        t1.y = 100; // this is now a part of the instance
+        var t2 = new Test();
+        t2.y = 400; // this is this.. current instance
+        alert(this.y); // undefined
+    </script>
+</body>
+</html>
