@@ -10,8 +10,17 @@
     <input type="button" value="Read Session" onclick="ReadSession()" /><br />
     <input type="button" value="Write Local" onclick="WriteLocal()" /><br />
     <input type="button" value="Read Local" onclick="ReadLocal()" /><br />
+    <input type="button" value="test" id="btn123" />
+    <input type="button" value="Add event to test button" id="btn1234" onclick="AddEvent()" />
 
     <script>
+        function AddEvent() {
+            document.getElementById("btn123").addEventListener("click", Click);
+
+        }
+        function Click() {
+            alert("hey i am dynamic");
+        }
         function WriteSession() {
             sessionStorage.setItem("name", "shiv koirala");
         }
